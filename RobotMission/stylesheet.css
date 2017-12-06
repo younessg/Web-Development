@@ -1,0 +1,156 @@
+body {
+	font-family: verdana;
+	font-size: 14px;
+  }
+
+	/* Main div container, act as a parent node ==== */
+	.main-container-div {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin:0 auto;	
+  }
+
+	/* Title for different screens */
+.screen-title{
+width: 310px;
+display: table;
+margin: 0 auto;
+text-align: center;
+vertical-align: middle;
+font-size: 12px;
+font-weight: bold;
+color: #006400;
+}
+
+	/* Start up screen, user input form ============ */
+  .user-input-div {	
+	border-radius: 6px;
+	border: 1px solid #73ad21;
+	padding: 4px;
+	box-shadow: 3px 3px 3px #888888;
+	display: table;
+  margin: 0 auto;
+  }
+
+	/* Faid-in effect for user input form */
+	.animate-opacity{animation:opac .50s}@keyframes opac{from{opacity:0} to{opacity:1}}
+	
+  .user_input_table {
+	max-width: 310px;
+	border: 0px;
+	align: center;
+	cellpadding: 2px;
+	cellspacing: 0px;
+	table-layout: fixed;
+  }
+  
+  .user_input_table td {
+	valign: top;
+	word-wrap:break-word;
+  }
+
+  .text-input-field {
+	border: 1px solid grey;
+	padding: 2px;	
+}
+
+.warning-symbol{
+	width: 1%;
+	margin: 0;
+	align: left;
+	text-align: left;
+}
+
+.user-input-btn {
+	display: inline-block;
+}
+
+/* Warning dialog section ============ */
+.instructions-div{
+	width: 350px;
+	font-size: 12px;
+}
+
+/* Warning dialog section ============ */
+
+/* Wraning dialog (background) */
+.alert-dialog {
+	display: none; /* Hidden by default */
+	position: fixed;
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Wraning dialog Content */
+.alert-dialog-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 50%;
+}
+
+/* Wraning dialog close Button */
+.alert-dialog-close-btn {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.alert-dialog-close-btn:hover,
+.alert-dialog-close-btn:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Map tiles section ============ */
+
+/* Base tile props */
+.baseTile {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	font-size: x-small;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 10px;
+}
+
+/* Tile 1 */
+.tile1 {
+	background-color: #339966;
+}
+
+/* Tile 2 */
+.tile2 {
+	background-color: #00cc99;
+}
+
+/* Robot section ============ */
+
+/* Message style when robot crash */
+.robotCrashed{
+	font-weight: bold;
+	color: red;
+}
+
+.robotSafe{
+	font-weight: bold;
+color: #006400;
+}
+
+/* Mission report ============ */
+#mission-report-div{
+	font-size: 12px;
+}

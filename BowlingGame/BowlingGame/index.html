@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Load the latest jQuery library -->
+<!-- <script src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script> -->
+<script type="text/javascript" src="Roll.js"></script>
+<script type="text/javascript" src="Main.js"></script>
+<title>Game</title>
+</head>
+<body>
+<br />
+<table width="90%" border="0" align="center" cellpadding="2" cellspacing="2" style="table-layout: fixed;">
+  <tr>
+    <td width="100px" align="right" style="padding-right:20px; background:#F5C5A5">Frame</td>
+    <td colspan="2" width="60px"><div id="frame_1">1</div></td>
+    <td colspan="2" width="60px"><div id="frame_2">2</div></td>
+    <td colspan="2" width="60px"><div id="frame_3">3</div></td>
+    <td colspan="2" width="60px"><div id="frame_4">4</div></td>
+    <td colspan="2" width="60px"><div id="frame_5">5</div></td>
+    <td colspan="2" width="60px"><div id="frame_6">6</div></td>
+    <td colspan="2" width="60px"><div id="frame_7">7</div></td>
+    <td colspan="2" width="60px"><div id="frame_8">8</div></td>
+    <td colspan="2" width="60px"><div id="frame_9">9</div></td>
+    <td colspan="3" width="60px"><div id="frame_10">10</div></td>
+    <td>Final score</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <div id="frame1_rolls">
+    	<td><label id="frame_1_first_roll"></label></td>
+    	<td><label id="frame_1_second_roll"></label></td>
+    </div>
+    <div id="frame2_rolls">
+    	<td><label id="frame_2_first_roll"></label></td>
+    	<td><label id="frame_2_second_roll"></label></td>
+    </div>
+    <div id="frame3_rolls">
+    	<td><label id="frame_3_first_roll"></label></td>
+    	<td><label id="frame_3_second_roll"></label></td>
+    </div>
+    <div id="frame4_rolls">
+    	<td><label id="frame_4_first_roll"></label></td>
+    	<td><label id="frame_4_second_roll"></label></td>
+    </div>
+    <div id="frame5_rolls">
+    	<td><label id="frame_5_first_roll"></label></td>
+    	<td><label id="frame_5_second_roll"></label></td>
+    </div>
+    <div id="frame6_rolls">
+    	<td><label id="frame_6_first_roll"></label></td>
+    	<td><label id="frame_6_second_roll"></label></td>
+    </div>
+    <div id="frame7_rolls">
+    	<td><label id="frame_7_first_roll"></label></td>
+    	<td><label id="frame_7_second_roll"></label></td>
+    </div>
+    <div id="frame8_rolls">
+		<td><label id="frame_8_first_roll"></label></td>
+    	<td><label id="frame_8_second_roll"></label></td>
+    </div>
+    <div id="frame9_rolls">
+		<td><label id="frame_9_first_roll"></label></td>
+    	<td><label id="frame_9_second_roll"></label></td>
+    </div>
+    <div id="frame10_rolls">
+		<td><label id="frame_10_first_roll"></label></td>
+    	<td><label id="frame_10_second_roll"></label></td>
+    	<td><label id="frame_10_third_roll"></label></td>
+    </div>
+    <div id="frame11_rolls">
+    	<td><label id="frame_11_first_roll"></label></td>
+    </div>
+  </tr>
+  <tr>
+    <td align="right" style="padding-right:20px; background:#F5C5A5">Frame score</td>
+    <td colspan="2"><p id="frame_1_sum"></p></td>
+    <td colspan="2"><p id="frame_2_sum"></p></td>
+    <td colspan="2"><p id="frame_3_sum"></p></td>
+    <td colspan="2"><p id="frame_4_sum"></p></td>
+    <td colspan="2"><p id="frame_5_sum"></p></td>
+    <td colspan="2"><p id="frame_6_sum"></p></td>
+    <td colspan="2"><p id="frame_7_sum"></p></td>
+    <td colspan="2"><p id="frame_8_sum"></p></td>
+    <td colspan="2"><p id="frame_9_sum"></p></td>
+    <td colspan="3"><p id="frame_10_sum"></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" style="padding-right:20px; background:#F5C5A5">State</td>
+    <td colspan="2"><p id="frame_1_state"></p></td>
+    <td colspan="2"><p id="frame_2_state"></p></td>
+    <td colspan="2"><p id="frame_3_state"></p></td>
+    <td colspan="2"><p id="frame_4_state"></p></td>
+    <td colspan="2"><p id="frame_5_state"></p></td>
+    <td colspan="2"><p id="frame_6_state"></p></td>
+    <td colspan="2"><p id="frame_7_state"></p></td>
+    <td colspan="2"><p id="frame_8_state"></p></td>
+    <td colspan="2"><p id="frame_9_state"></p></td>
+    <td colspan="3"><p id="frame_10_state"></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" style="padding-right:20px; background:#F5C5A5">Current score</td>
+    <td colspan="2"><div id="frame_1_score"></div></td>
+    <td colspan="2"><div id="frame_2_score"></div></td>
+    <td colspan="2"><div id="frame_3_score"></div></td>
+    <td colspan="2"><div id="frame_4_score"></div></td>
+    <td colspan="2"><div id="frame_5_score"></div></td>
+    <td colspan="2"><div id="frame_6_score"></div></td>
+    <td colspan="2"><div id="frame_7_score"></div></td>
+    <td colspan="2"><div id="frame_8_score"></div></td>
+    <td colspan="2"><div id="frame_9_score"></div></td>
+    <td colspan="3"><div id="frame_10_score"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="28">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+<form id="myForm" onsubmit="return(domath());" autocomplete="off">
+
+  <tr>
+    <td align="right" style="padding-right:20px; background:#F5C5A5">First rolls</td>
+    <td colspan="21">
+    
+    	
+    		<input type="text" id="first_roll" />
+    	
+    
+   </td>    
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" style="padding-right:20px; background:#F5C5A5">Second roll</td>
+    <td colspan="21">
+      <input type="text" id="second_roll" />
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="21">
+      <input type="reset" id="reset" value="Reset"/>
+      <input type="submit" id="submit" value="Submit"/>
+      </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="21">Frame      :
+      <input type="text" id="currentFrame" size="2" /></td>
+    <td></td>
+  </tr>
+  
+  </form>
+  
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

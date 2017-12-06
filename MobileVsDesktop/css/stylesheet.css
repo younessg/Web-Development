@@ -1,0 +1,19 @@
+.instructions {
+	margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: Verdana;
+    font-size: 14px;
+    color: #900C3F;
+}
+
+hr { 
+    height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.myImage {
+	padding: 2px 2px 2px 2px;
+}

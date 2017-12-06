@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Untitled Document</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109841627-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-109841627-1');
+  </script>
+</head>
+
+<body>
+  <!-- Parent div / main container for all content -->
+  <div class="main-container-div">
+
+    <!-- Modal dialog for user wrong input -->
+    <div class="alert-dialog">
+      <div class="alert-dialog-content">
+        <span class="alert-dialog-close-btn">&times;</span>
+        <p class="alert-dialog-message"></p>
+      </div>
+    </div>
+
+    <!-- Screen title -->
+    <div class="screen-title">
+    </div>
+
+    <!-- Used as empty space -->
+    <div style="height: 25px; width: 100%;">
+    </div>
+
+    <!-- User input form -->   
+    <div class="user-input-div animate-opacity">
+      <table class="user-input-table">
+        <tr>
+          <td height="10" colspan="3"></td>
+        </tr>
+        <tr>
+          <td align="right">Matrix size:</td>
+          <td>
+            <input type="text" class="matrix-size text-input-field" placeholder="5 5" />
+          </td>
+          <td>
+            <div class="warning-symbol-1 warning-symbol">*</div>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">First position:</td>
+          <td><input type="text" class="first-position text-input-field" placeholder="1 2 N" /></td>
+          <td>
+            <div class="warning-symbol-2 warning-symbol">*</div>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">Walk:</td>
+          <td><input type="text" class="commands text-input-field" placeholder="RGRGGRGRG" /></td>
+          <td>
+            <div class="warning-symbol-3 warning-symbol">*</div>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">&nbsp;</td>
+          <td colspan="2">
+            <input type="submit" class="user-input-btn" value="Submit" />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3" align="center">
+            <div class="instructions-div" align="left">
+              <h4>Instructions:</h4>
+              <ul>
+                <li>Fields marked with * are mandatory.</li>
+                <li>Matrix size: is 1 x 1 or higher, entries are separated by <b>one</b> space.</li>
+                <li>First poistion: 1 - 9 digits plus one letter as in N, S, E, W.</li>
+                <li>First poistion: all entries are separted by <b>one</b> space.</li>
+                <li>Walk: G for walking, L and R are for left and right turns respectively.</li>
+              </ul>
+            </div>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<script src="main.js"></script>

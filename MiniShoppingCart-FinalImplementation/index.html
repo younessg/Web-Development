@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Load the latest jQuery library -->
+<script src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
+<!-- Load the mini cart associated JavaScript code -->
+<script type="text/javascript" src="resources/js/model/OrderLine.js"></script>
+<script type="text/javascript" src="resources/js/model/JasonData.js"></script>
+<script type="text/javascript" src="resources/js/model/MobileDetector.js"></script>
+<script type="text/javascript" src="resources/js/model/MiniCart.js"></script>
+<script type="text/javascript" src="resources/js/view/MiniCartViewManager.js"></script>
+<script type="text/javascript" src="resources/js/model/MiniCartCurrency.js"></script>
+<script type="text/javascript" src="resources/js/controller/Main.js"></script>
+<script type="text/javascript" src="resources/js/controller/Controller.js"></script>
+<!-- index page style -->
+<link href="resources/css/main.css" rel="stylesheet" type='text/css'/> 
+<!-- mini cart style -->
+<link href="resources/css/mini-cart.css" rel="stylesheet" type="text/css"/>
+<title>Mini Cart Home Assignment - Youness Ghanim</title>
+</head>
+<body>
+<!-- A place holder for mini cart content -->
+<div id="mini-cart-div">
+</div>
+<nav id="top-menu">
+  <ul>
+    <li><a href="index.html">Language (EN)</a></li>
+    <li><a href="index.html">Currency ($)</a> </li>
+    <li><a href="index.html"><img src="resources/images/my_acount_ion.png" width="16" height="23" alt="My account" align="absbottom" border="none">My Account</a></li>
+    <li id="show-hide-mini-cart"><a href="#">My Cart</a></li>
+    <li><a href="index.html"></a></li>
+  </ul>
+</nav>
+<table width="95%" border="0" align="center" cellspacing="0">
+  <tr>
+    <td width="8%">&nbsp;</td>
+    <td width="84%">&nbsp;</td>
+    <td width="8%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><img src="resources/images/logo.png" width="100" height="35" alt="Logo"></td>
+    <td align="center">
+        <ul id="second-menu">
+            <li><a href="index.html">PRODUCTS</a></li>
+            <li><a href="index.html">CAMPAINGNS & PROMOTIONS</a></li>
+            <li><a href="index.html">ABOUT US</a></li>
+            <li><a href="index.html">OTHER LINK</a></li>
+        </ul>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td align="center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="width:40%; vertical-align:middle">
+        <ul style="text-align: left;">
+          <li>Press the buttons below to test the mini cart!</li>
+          <li>Products quantity is  loaded from JASON data and can be changed by the user, all figures will be recalculated.</li>
+          <li>Reset button, this will empty the mini cart from order lines.</li>
+          <li>Click on &quot;My Cart&quot; in the top menu to see the changes.</li>
+          <li>Removing an item from the cart is supported, cart is then updated.</li>
+          <li>NOTE: Product availability and its state is loaded from JSON dummy data.</li>
+        </ul>
+    <input type="button" value="Load from JSON" id="loadButton"/>
+	<input type="button" value="Reset" id="resetButton"/>
+    </div>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

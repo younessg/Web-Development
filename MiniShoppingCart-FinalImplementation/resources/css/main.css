@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* ----------------------------------------------------- */
+/* Styling the first navigation menu, used in index.html */
+/* ----------------------------------------------------- */
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-family: "Lucida Grande", "Helvetica Nueue", Arial, sans-serif;
+}
+/* Styling top menu */
+#top-menu {
+	background-color: #023677;
+	color: #000;
+	display: block;
+	margin: 2.5em 0 0 0;
+	overflow: hidden;
+}
+
+#top-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float:right;
+}
+
+#top-menu ul li {
+	margin: 0;
+	display: inline-block;
+	list-style-type: none;
+}
+
+#top-menu > ul > li > a {
+	color: #FFF;
+	font-weight: bold;
+	display: block;
+	line-height: 2em;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+
+#top-menu li:hover {
+	background-color: #FFF;
+}
+
+#top-menu li > a:hover {
+	color:#1E1E1E;
+}
+/* ------------------------------------------------------ */
+/* Styling the second navigation menu, used in index.html */
+/* ------------------------------------------------------ */
+#second-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#second-menu li {
+	margin: 0;
+	display: inline-block;
+	list-style-type: none;
+}
+
+#second-menu li > a {
+	color: #666;
+	font-weight: bold;
+	display: block;
+	line-height: 2em;
+	padding: 0em 2em;
+	text-decoration: none;
+}
+
+#second-menu li > a:hover {
+	color:#999;
+}
+
+#second-menu li:hover > ul {
+	position:absolute;
+	display : block;
+}

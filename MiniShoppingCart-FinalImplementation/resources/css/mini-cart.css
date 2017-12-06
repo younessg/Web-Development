@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* 
+	The mini cart and its content such as header, list of orderlines, footer etc 
+*/
+#mini-cart-div {
+	position:absolute;
+	background:#FFF;
+	border:#999;
+	width:24em;
+	min-height:14em;
+	max-height:26em;
+	z-index:100;
+	top:5.5em;
+	right:4.3em;
+	display:none;
+	box-shadow: 0em 0em .1em #666;
+	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	word-wrap: break-word;
+}
+/* IE support for div scrollbar style */
+#mini-cart-div {
+	scrollbar-face-color: #999;
+	scrollbar-track-color: #CCC;
+	scrollbar-arrow-color: #666;
+	scrollbar-highlight-color: #666;
+	scrollbar-3dlight-color: #999;
+}
+/* Chrome support for div scrollbar style */
+#mini-cart-div::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0);
+}
+#mini-cart-div::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+	border: 2px solid #FFF;
+}
+#mini-cart-div::-webkit-scrollbar-thumb
+{
+	background-color: #CCC;
+	border: 2px solid #FFF;
+}
+/* Order lines table within mini cart div */
+#order-lines-table {
+	margin-top:1em;
+	width: 100%;
+	border: 0;
+	cellspacing: 0;
+	cellpadding: 3;
+}
+/* Orderlines TR, holding product image, descrition and remove from cart icon */
+#orderline-images-txt-tr {
+	vertical-align:top;
+	text-align:top;
+}
+/* Orderlines TD, text for when a product is not available */
+#orderline-missing-product-txt-td {
+	color:#F60;
+	font-size:.87em;
+	font-style:italic;
+	padding-bottom: 1em;
+}
+/* Productline description within mini cart */
+#product-name-td {
+	font-size:.87em;
+	font-weight:bold;
+}
+/* Productline quantity within mini cart */
+.itemQuantity {
+	text-align: center;
+	width: 2.9em;
+	height: 1.9em;
+	border: 1.5px solid #E4E4E4;
+}
+/* Horizontal line inisde mini cart */
+#order-line-hr {
+	height:1px;
+	border:none;
+	color:#E4E4E4;
+	background-color:#E4E4E4;
+	margin:1em;
+}
+/* Mini cart footer */
+#shopping-cart-footer-quantity-div {
+	font-size:.8em;
+	color: #666;
+	margin-left:.5em;
+	margin-right:.5em;
+	padding-top:.6em;
+}
+/* Mini cart footer, text for total value */
+#shopping-cart-footer-value-div {
+	font-size:1.2em;
+	color: #333;
+	margin-top: .5em;
+	margin-left:.4em;
+	margin-right:1em;
+}
+/* Mini cart footer, buttons container */
+#shopping-cart-footer-buttons-div {
+	margin-top:4.5em;
+	margin-left:.4em;
+	margin-right:1em;
+}
+/* Mini cart footer, view cart & checkout divs/buttons */
+#view-cart-div, #checkout-div {
+	color:#FFF;
+	font-size:.9em;
+	font-weight:bold;
+	margin::.6em;
+	padding:.8em;
+	text-align:center;
+	width:40%;
+	border-radius: 2px;
+}
+/**/
+#mini-cart-hearder-main-div {
+	border: 1px solid #F60;
+}
+/**/
+#mini-cart-hearder-top-div {
+	height: 1.8em;
+	color: #FFF;
+	font-size: .9em;
+	background: #F60;
+	padding:.4em;
+}
+/**/
+#exclamation-mark-img {
+	width:14px;
+	height:14px;
+	margin-left:.6em;
+	margin-top:.5em;
+}
+/**/
+#mini-cart-header-bottom-div {
+	height: 1.8em;
+	font-size: .9em;
+	padding-top:.9em;
+	padding-left:1em;
+	vertical-align: middle;
+}
+/**/
+#empty-cart-text-top-1 {
+	padding: 1em 1em;
+	font-size: .8em;
+	font-weight:bold;
+	color:#4E4E4E;
+}
+/**/
+#empty-cart-text-top-2 {
+	padding-left: 1em;
+	font-size: .8em;
+	font-weight:bold;
+	color:#1195E9;
+}
+/* Empty cart horizotal line */
+#empty-cart-hr {
+	height:1px;
+	border:none;
+	color:#E4E4E4;
+	background-color:#E4E4E4;
+	margin-top:1.8em;
+	margin-bottom:1.8em;
+	width: 85%;
+}
+/**/
+#empty-cart-text-bottom-1 {
+	padding-left: 1em;
+	font-size: .8em;
+	font-style:italic;
+	color:#4E4E4E;
+}
+/**/
+#empty-cart-text-bottom-2 {
+	padding-left: 1em;
+	font-size: 1em;
+	font-weight:bold;
+	color:#4E4E4E;
+	float:left;
+}
+/**/
+#empty-cart-text-bottom-3 {
+	padding-left: 1em;
+	font-size: 1em;
+	font-weight:bold;
+	color:#4E4E4E;
+	float:right;
+	margin-right:1em;
+}
